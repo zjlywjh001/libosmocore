@@ -117,6 +117,10 @@ struct gsm0808_handover_required {
 };
 struct msgb *gsm0808_create_handover_required(const struct gsm0808_handover_required *params);
 
+struct gsm0808_handover_detected {
+};
+struct msgb *gsm0808_create_handover_detected(const struct gsm0808_handover_detected *params);
+
 struct msgb *gsm0808_create_dtap(struct msgb *msg, uint8_t link_id);
 void gsm0808_prepend_dtap_header(struct msgb *msg, uint8_t link_id);
 

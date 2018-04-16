@@ -679,6 +679,11 @@ struct msgb *gsm0808_create_handover_required(const struct gsm0808_handover_requ
 	return msg;
 }
 
+struct msgb *gsm0808_create_handover_detected(const struct gsm0808_handover_detected *params)
+{
+	return NULL;
+}
+
 /*! Prepend a DTAP header to given Message Buffer
  *  \param[in] msgb Message Buffer
  *  \param[in] link_id Link Identifier */
